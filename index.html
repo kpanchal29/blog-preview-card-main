@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Blog preview card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .magic {
+        background-color: hsl(47, 88%, 63%);
+      }
+      .font{
+        font-family: "Figtree", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="magic h-screen flex flex-col items-center justify-center m-3 sm:m-0 ">
+    <main
+      class="bg-white h-auto w-auto p-5 rounded-2xl border border-black border-r-8 border-b-8 sm:text-[16px] text-xs"
+    >
+      <img
+        src="/assets/images/illustration-article.svg"
+        alt="iluustration"
+        class="rounded-2xl"
+      />
+      <p
+        class="p-1 bg-yellow-300 text-black rounded-lg w-28 text-xl text-center mt-3 font font-medium"
+      >
+        Learning
+      </p>
+      <p class="text-black pt-2 font opacity-80 font-medium">
+        Published 21 Dec 2023
+      </p>
+      <button class="text-black pt-2 font font-extrabold sm:text-2xl hover:text-[#f4d04e] text-xl">
+        HTML & CSS foundations
+      </button>
+      <p class="pt-2 text-black font font-medium opacity-50 text-left">
+        These languages are the backbone of every<br/> website, defining structure,
+        content, and<br/> presentation.
+      </p>
+      <footer class="flex gap-4 justify-start pt-4 items-center">
+        <img src="assets/images/image-avatar.webp" alt="logo" class="sm:h-10 sm:w-10 h-7 w-7">
+        <p class="font font-extrabold text-black sm:text-[16px] text-xs">Greg Hooper</p>
+      </footer>
+    </main>
+  </body>
 </html>
